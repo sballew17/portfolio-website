@@ -152,9 +152,6 @@ div {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 200px;
           flex: 0 1 200px;
-  height: 100px;
-  width: 120px;
-  align: right;
 }
 .page-header__item:last-child{
   -webkit-box-flex: 1;
@@ -345,17 +342,4 @@ button:focus,
 .cloud-back {
   -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
           animation: 34s cloud-move-reverse infinite alternate linear;
-}
-#page-container {
-  position: relative;
-  min-height: 100%;
-}
-#content-wrap {
-  padding-bottom: 2.5rem;
-}
-#footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem;
 }
