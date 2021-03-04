@@ -143,8 +143,7 @@ div {
   flex: 0 1 200px;
   height: 100px;
   width: 120px;
-  align: right;
-}
+  }
 .page-header__item:last-child{
   flex-grow: 1;
   text-align: right;
@@ -199,14 +198,14 @@ div {
       grid-gap: 10px;
     }
     .grid__item:last-child {
-      grid-columns: auto/ auto;
+      grid-column: auto/ auto;
       grid-row: auto/ auto;
     }
     h1 {
       font-size: 22px;
     }
   }
-.button, button {
+  .button, button {
   /* overwrites browser defaults and resets the boarder */
   border: none;
   display: inline-block;
@@ -217,8 +216,8 @@ div {
   padding: 10px;
   border-radius: 3px;
   /* width of the border, type, color */
-  border-bottom: 2px solid rgba (0, 0, 0, 0.3);
-  transition-duration: 0.2s opacity;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  transition-duration: 0.2s;
   }
 button:hover,
 button:focus,
@@ -242,7 +241,7 @@ button:focus,
     fill: #edc655;
   }
   50% {
-    fill: #fcffad;
+     fill: #fcffad;
   }
   100% {
     fill: #f76414;
