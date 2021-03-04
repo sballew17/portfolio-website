@@ -143,7 +143,11 @@ div {
   flex: 0 1 200px;
   height: 100px;
   width: 120px;
+<<<<<<< Updated upstream
   }
+=======
+}
+>>>>>>> Stashed changes
 .page-header__item:last-child{
   flex-grow: 1;
   text-align: right;

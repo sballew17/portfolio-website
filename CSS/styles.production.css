@@ -154,7 +154,11 @@ div {
           flex: 0 1 200px;
   height: 100px;
   width: 120px;
+<<<<<<< Updated upstream
   }
+=======
+}
+>>>>>>> Stashed changes
 .page-header__item:last-child{
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
