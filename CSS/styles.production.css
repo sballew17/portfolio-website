@@ -18,7 +18,8 @@ line-height: 1.6;
 margin: 0 auto;
 }
 nav {
-  text-align: right;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 body{background-color: lightgray;
 }
@@ -154,23 +155,20 @@ div {
           flex: 0 1 200px;
   height: 100px;
   width: 120px;
-<<<<<<< Updated upstream
   }
-=======
-}
->>>>>>> Stashed changes
 .page-header__item:last-child{
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  text-align: right;
-}
+   -webkit-box-flex: 1;
+       -ms-flex-positive: 1;
+           flex-grow: 1;
+  }
 .navigation-list{
   list-style-type: none;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
   }
 .navigation-list li {
   display: inline-block;
-  margin-left: 15px;
+  margin-left: auto;
   }
   .navigation-list__item--active {
     text-decoration: none;
@@ -222,14 +220,14 @@ div {
       grid-gap: 10px;
     }
     .grid__item:last-child {
-      grid-column: auto/ auto;
+      grid-columns: auto/ auto;
       grid-row: auto/ auto;
     }
     h1 {
       font-size: 22px;
     }
   }
-  .button {
+.button {
   /* overwrites browser defaults and resets the boarder */
   border: none;
   display: inline-block;
@@ -240,12 +238,12 @@ div {
   padding: 10px;
   border-radius: 3px;
   /* width of the border, type, color */
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  -webkit-transition-duration: 0.2s;
-       -o-transition-duration: 0.2s;
-          transition-duration: 0.2s;
+  border-bottom: 2px solid rgba (0, 0, 0, 0.3);
+  -webkit-transition-duration: 0.2s opacity;
+       -o-transition-duration: 0.2s opacity;
+          transition-duration: 0.2s opacity;
   }
-  button {
+button {
   /* overwrites browser defaults and resets the boarder */
   border: none;
   display: inline-block;
@@ -256,10 +254,10 @@ div {
   padding: 10px;
   border-radius: 3px;
   /* width of the border, type, color */
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  -webkit-transition-duration: 0.2s;
-       -o-transition-duration: 0.2s;
-          transition-duration: 0.2s;
+  border-bottom: 2px solid rgba (0, 0, 0, 0.3);
+  -webkit-transition-duration: 0.2s opacity;
+       -o-transition-duration: 0.2s opacity;
+          transition-duration: 0.2s opacity;
   }
 button:hover,
 button:focus,
@@ -291,7 +289,7 @@ button:focus,
     fill: #edc655;
   }
   50% {
-     fill: #fcffad;
+    fill: #fcffad;
   }
   100% {
     fill: #f76414;
