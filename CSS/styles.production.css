@@ -121,9 +121,16 @@ div {
   border-radius: 50%;
 }
 .screenshot {
+<<<<<<< Updated upstream
   width: 250px;
   height: 250px;
     
+=======
+  float: center;
+  width: 250px;
+  margin-right: 40px;
+  
+>>>>>>> Stashed changes
 }
 .page-footer {
   clear: both;
