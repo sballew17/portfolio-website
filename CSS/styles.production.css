@@ -121,9 +121,9 @@ div {
   border-radius: 50%;
 }
 .screenshot {
-  width: 100;
-  height: 100;
-    
+  float: center;
+  width: 250px;
+  margin-right: 40px;
 }
 .page-footer {
   clear: both;
