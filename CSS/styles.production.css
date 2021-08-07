@@ -10,8 +10,7 @@ Colors used
 Background: lightgray
 Text color (Navy): #000080
 */
-:root { /* dark green */ /* navy */ /* green */ /* yellow */
-  }
+
 header{font-family: 'Lato', sans-serif;
 font-size: 12px;
 line-height: 1.6;
@@ -227,7 +226,7 @@ div {
       grid-gap: 10px;
     }
     .grid__item:last-child {
-      grid-columns: auto/ auto;
+      grid-column: auto/ auto;
       grid-row: auto/ auto;
     }
     h1 {
