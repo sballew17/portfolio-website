@@ -169,7 +169,7 @@ div {
 /* start grid fallback */
 .grid__item {
   display: inline-block;
-  width: 25%;
+  width: 33%;
 }
 /* end grid fallback */
 @supports (display: grid) {
@@ -181,14 +181,18 @@ div {
     margin: 0;
   }
   .grid__item {
-    background-color: white;
+    background-color: lightgray;
     width: auto;
-    min-height: auto;
+    min-height: 10px;
     margin: 0;
+    padding: 10px;
+    box-shadow: white;
   }
   .grid__item:last-child {
-    grid-column: 3 / 3;
-    grid-row: 1 / 3;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
   }
 }
 @media all and (max-width: 500px) {
@@ -293,4 +297,44 @@ button:focus,
   bottom: 0;
   width: 100%;
   height: 2.5rem;
+}
+
+#wrapper {
+  width: 90%;
+}
+
+#content {
+  width: 100%;
+}
+
+#sidebar-left {
+  width: 100%;
+  clear: both;
+
+  /* Additional styling for our new layout */
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
+}
+
+#sidebar-right {
+  width: 100%;
+  clear: both;
+
+  /* Additional styling for our new layout */
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* Styles */
 }
