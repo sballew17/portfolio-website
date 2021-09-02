@@ -10,21 +10,13 @@ Colors used
 Background: lightgray
 Text color (Navy): #000080
 */
-<<<<<<< Updated upstream
-:root { /* dark green */ /* navy */ /* green */ /* yellow */
-  }
-header{font-family: 'Lato', sans-serif;
-font-size: 12px;
-line-height: 1.6;
-margin: 0 auto;
-=======
-
+/* :root { dark green */ /* navy */ /* green */ /* yellow
+  } */
 header {
   font-family: "Lato", sans-serif;
   font-size: 12px;
   line-height: 1.6;
   margin: 0 auto;
->>>>>>> Stashed changes
 }
 nav {
   -ms-flex-line-pack: center;
@@ -137,12 +129,8 @@ div {
 .screenshot {
   width: 250px;
   height: 250px;
-<<<<<<< Updated upstream
   margin-right: 40px;
   border-radius: 100%;
-  
-=======
->>>>>>> Stashed changes
 }
 .page-footer {
   clear: both;
@@ -246,23 +234,17 @@ div {
   .grid {
     grid-gap: 10px;
   }
-<<<<<<< Updated upstream
   @media all and (max-width: 750px) {
     .grid {
       grid-gap: 10px;
     }
     .grid__item:last-child {
-      grid-columns: auto/ auto;
+      grid-column: auto/ auto;
       grid-row: auto/ auto;
     }
     h1 {
       font-size: 22px;
     }
-=======
-  .grid__item:last-child {
-    grid-column: auto/ auto;
-    grid-row: auto/ auto;
->>>>>>> Stashed changes
   }
   h1 {
     font-size: 22px;
