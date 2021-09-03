@@ -3,6 +3,9 @@ Colors used
 Background: lightgray
 Text color (Navy): #000080
 */
+* {
+  box-sizing: border-box;
+}
 :root {
   --primary-color: lightgray;
   --secondary-color: #0cb01d; /* dark green */
@@ -12,15 +15,13 @@ Text color (Navy): #000080
   --button-color-secondary: #e0b354; /* yellow */
   --font-weight: 700;
 }
-header {
+/* header {
   font-family: "Lato", sans-serif;
   font-size: 12px;
   line-height: 1.6;
   margin: 0 auto;
-}
-nav {
-  align-content: center;
-}
+} */
+
 body {
   background-color: var(--primary-color);
 }
@@ -117,6 +118,10 @@ div {
   padding: 10px;
   margin: 10px;
 }
+.content {
+  text-align: center;
+  padding: 20px;
+}
 .profile__portrait {
   float: left;
   width: 250px;
@@ -144,6 +149,39 @@ div {
   display: flex;
   width: 100%;
   padding: 20px;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.3);
+}
+
+.page-header_item {
+  flex: 0 1 200px;
+}
+
+.page-header_item:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-list li {
+  margin-left: 15px;
+  display: inline-block;
+}
+
+.navigation-list__item--active {
+  text-decoration: none;
+}
+
+.logo {
+  width: 100px;
+}
+
+/* .page-header {
+  display: flex;
+  width: 100%;
+  padding: 20px;
 }
 .page-header__item {
   flex: 0 1 200px;
@@ -165,7 +203,7 @@ div {
 .navigation-list__item--active {
   text-decoration: none;
   font-size: 24px;
-}
+} */
 /* start grid fallback */
 .grid__item {
   display: inline-block;
@@ -196,8 +234,31 @@ div {
   }
 }
 @media all and (max-width: 500px) {
+  .berlin-illustration {
+    width: 469px;
+  }
+}
+@media all and (max-width: 500px) {
   .grid {
     grid-template-columns: 1fr;
+  }
+  .profile-portrait {
+    float: none;
+    margin-right: auto;
+    width: 187px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .page-header_item:last-child {
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  .navigation-list {
+    padding: 0;
   }
 }
 @media all and (min-width: 500px) and (max-width: 750px) {
@@ -214,6 +275,12 @@ div {
     grid-row: auto/ auto;
   }
   h1 {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  h3 {
     font-size: 22px;
   }
 }

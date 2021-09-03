@@ -4,9 +4,10 @@
 <head>
   <title>Sam Ballew's Webpage</title>
   <meta charset="utf-8">
-  <meta content="True" name="HandheldFriendly" />
-  <meta name="viewpoint" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
   <meta name="viewport" content="width=device-width" />
+  <meta content="True" name="HandheldFriendly" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <link rel="shortcut icon" href="Img/sam_icon.svg">
   <link rel="stylesheet" href="CSS/normalize.css">
   <link
@@ -20,21 +21,35 @@
   <div id="page-container">
     <div id="content-wrap">
       <header class="page-header">
-        <!-- I need to add my logo here -->
-        <img src="Img/sam_logo.svg" alt="Logo is an uppercase S" class="page-header__item">
-        <nav>
+        <!--ADD YOUR LOGO IMAGE HERE-->
+        <img src="Img/sam.png" alt="Logo is an uppercase S" class="page-header_item logo">
+        <nav class="page-header_item">
           <ul role="menubar" class="navigation-list">
             <li role="presentation">
-              <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+              <a
+                href="index.html"
+                role="menuitem"
+                class="navigation-list__item navigation-list__item--active"
+                >Home</a
+              >
             </li>
             <li role="presentation">
-              <a href="About.html" role="menuitem" class="navigation-list__item">About</a>
+              <a href="about.html" role="menuitem" class="navigation-list__item"
+                >About</a
+              >
             </li>
             <li role="presentation">
-              <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Work</a>
+              <a href="work.html" role="menuitem" class="navigation-list__item"
+                >Work</a
+              >
             </li>
             <li role="presentation">
-              <a href="Contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+              <a
+                href="contact.html"
+                role="menuitem"
+                class="navigation-list__item"
+                >Contact</a
+              >
             </li>
           </ul>
         </nav>
@@ -44,7 +59,7 @@
         <h1>Work</h1> <br>
         <div class="grid">
           <!-- Grid items will live here -->
-          <div class="grid__item">
+          <div class="grid-item">
             <h2>Mobile web app</h2>
             <img src="Img/mobile.png" alt="project" class="screenshot">
             <p>
@@ -53,7 +68,7 @@
             </p>
             <a target="_blank" href="https://github.com/sballew17/hello-world">See project on Github</a>
           </div>
-          <div class="grid__item">
+          <div class="grid-item">
             <h2>Meet React Project</h2>
             <img src="Img/Meet.PNG" alt="project" class="screenshot">
             <p>
@@ -64,7 +79,7 @@
             <a target="_blank" href="https://sballew17.github.io/meet/">See project on Github</a>
             <a target="_blank" href="https://github.com/sballew17/meet">See my code on Github</a>
           </div>
-          <div class="grid__item">
+          <div class="grid-item">
             <h2>Movie Project App Part 2</h2>
             <img src="Img/myFlix.PNG" alt="project" class="screenshot">
             <p>
@@ -74,7 +89,7 @@
             <a target="_blank" href="https://sam-superhero-movie-list.netlify.app/">See project on Netlify</a>
             <a target="_blank" href="https://github.com/sballew17/myFlix-client">See my code on Github</a>
           </div>
-          <div class="grid__item">
+          <div class="grid-item">
             <h2>Movie Project App Part 1</h2>
             <img src="Img/myFlix.PNG" alt="project" class="screenshot">
             <p>
@@ -86,7 +101,7 @@
             <a target="_blank" href="https://github.com/sballew17/movie.project">See on my Github</a>
             <a target="_blank" href="https://sam-superhero-movie-project.herokuapp.com/documentation.html">Check out my API Live Demo</a>
           </div>
-          <div class="grid__item">
+          <div class="grid-item">
             <h2>PokeMon Pokedex</h2>
             <img src="Img/Pokemon.PNG" alt="project" class="screenshot">
             <p>
@@ -96,7 +111,7 @@
             <a target="_blank" href="https://sballew17.github.io/Sam-s-Pokedex-main/">Check it out on my Github</a>
             <a target="_blank" href="https://github.com/sballew17/Sam-s-Pokedex-main">See my code on Github</a>
           </div>
-          <div class="grid__item">
+          <div class="grid-item">
             <h2>Angular myFlix Project</h2>
             <img src="Img/angular.PNG" alt="project" class="screenshot">
             <p>
@@ -109,11 +124,7 @@
           </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-      <script src="script.js">
-      </script>
+  
     </section>
   </div>
   </div>
